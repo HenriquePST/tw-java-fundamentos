@@ -38,7 +38,7 @@ public class Main {
         // voce quer fazer a operacao 9+2 ?
         System.out.println(String.format("você quer fazer a operacao %d %c %d ", numero1, operacao, numero2));
         int resultado = 0;
-6
+
         // Estrutura de tomada de decisao ( if e else )
 
         if (operacao == '+') {
