@@ -41,7 +41,7 @@ public class Main {
 
         // Estrutura de tomada de decisao ( if e else )
 
-        if (operacao == '+') {
+      /*  if (operacao == '+') {
             resultado = numero1 + numero2;
         } else if (operacao == '-') {
             resultado = numero1 - numero2;
@@ -51,9 +51,36 @@ public class Main {
             resultado = numero1 / numero2;
         } else {
             System.out.println("operacao inválida");
+        } */
+
+
+        //        Estrutura de tomada de decisao ( switch case )
+
+        switch (operacao){
+            case '+':
+                resultado = numero1 + numero2;
+                break;
+            case  '-':
+                resultado = numero1 - numero2;
+                break;
+            case  '*':
+                resultado = numero1 * numero2;
+                break;
+            case  '/':
+                resultado = numero1 / numero2;
+                break;
+            default:
+                System.out.println("operacão inválida");
+
         }
         // interpolação
         System.out.println(String.format("%d %c %d = %d", numero1, operacao, numero2, resultado));
         scanner.close();
+
+
+
+
+
+
     }
 }
