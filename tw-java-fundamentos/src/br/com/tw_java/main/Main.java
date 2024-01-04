@@ -1,5 +1,6 @@
 package br.com.tw_java.main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 // Declaração de uma classe chamada Main
@@ -29,11 +30,11 @@ public class Main {
 
         // Entendendo e configurando o compiler compliance, Interpolação
 
-        System.out.println(" Digite o primeiro numero");
+        System.out.print(" Digite o primeiro numero : ");
         int numero1 = scanner.nextInt();
-        System.out.println("digite a operacao");
+        System.out.print("digite a operacao ");
         char operacao = scanner.next().charAt(0);
-        System.out.println("Digite o segundo numero");
+        System.out.print("Digite o segundo numero :");
         int numero2 = scanner.nextInt();
         // voce quer fazer a operacao 9+2 ?
         System.out.println(String.format("você quer fazer a operacao %d %c %d ", numero1, operacao, numero2));
@@ -73,14 +74,13 @@ public class Main {
                 System.out.println("operacão inválida");
 
         }
-        // interpolação
-        System.out.println(String.format("%d %c %d = %d", numero1, operacao, numero2, resultado));
+        //Primeiros contatos com coleções - ArrayList
+
+        ArrayList<String> historico = new ArrayList<String>();
+        String entradaHistorico = String.format("%d %c %d = %d", numero1, operacao, numero2, resultado);
+        historico.add(entradaHistorico);
+        System.out.println(entradaHistorico);
         scanner.close();
-
-
-
-
-
 
     }
 }
